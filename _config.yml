@@ -1,8 +1,8 @@
 # Site settings
-title:       The Millenium Falcon
+title:       A Yellow Envelope
 email:       hbhyrava@gmail.com
 author:      darthbhyrava
-description: "Sometimes, I code and write."
+description: "Letters to myself."
 baseurl:     "/write"
 url:         "http://bhyrava.me/write"
 date_format: "%b %-d, %Y"
@@ -37,7 +37,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: darthbhyrava
 bitbucket_username:
 stackoverflow_id:
 twitter_username:
@@ -54,7 +54,7 @@ flattr_button:
 # Post sharing icons
 show_sharing_icons: false
 # Change to 'true' to enable individual icons
-share_facebook: false
+share_facebook: true
 share_twitter: false
 share_googleplus: false
 share_linkedin: false

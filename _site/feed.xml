@@ -1,10 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>The Millenium Falcon</title>
-    <description>Sometimes, I code and write.</description>
+    <title>A Yellow Envelope</title>
+    <description>Letters to myself.</description>
     <link>http://bhyrava.me/write/write/</link>
     <atom:link href="http://bhyrava.me/write/write/feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>A New Bunch Of Letters</title>
+        <description>&lt;p&gt;Sometimes, I write letters.&lt;/p&gt;
+
+&lt;p&gt;Simple, hand-written letters, three-folded and put into yellow envelopes to be given to people. I do that because spoken words are hurried and perishable and are lost in the wind, while written words can be treasured and carry a quaint silence of their own.&lt;/p&gt;
+
+&lt;p&gt;And sometimes, I write letters to myself. And since I spend more time at the keyboard and the screen than with a pen and a book these days, I would like to keep these letters stashed away in A Yellow Envelope - a space for my words, which is, funnily,  neither yellow nor an envelope.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;
+    &quot;Writing is easy. All you have to do is cross out the wrong words.&quot;
+  &lt;/p&gt;
+  &lt;footer&gt;&lt;cite title=&quot;Mark Twain&quot;&gt;Mark Twain&lt;/cite&gt;&lt;/footer&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+</description>
+        <pubDate>Thu, 05 May 2016 12:10:00 +0530</pubDate>
+        <link>http://bhyrava.me/write/write/jekyll/pixyll/2016/05/05/new-letters/</link>
+        <guid isPermaLink="true">http://bhyrava.me/write/write/jekyll/pixyll/2016/05/05/new-letters/</guid>
+      </item>
     
       <item>
         <title>Announcing Version 2.0</title>
