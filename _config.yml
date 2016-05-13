@@ -1,7 +1,7 @@
 # Site settings
 title:       A Yellow Envelope
 email:       hbhyrava@gmail.com
-author:      darthbhyrava
+author:      bhyrava
 description: "Letters to myself."
 baseurl:     "/write"
 url:         "http://bhyrava.me"
@@ -21,7 +21,7 @@ animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    true
-ajaxify_contact_form: true
+ajaxify_contact_form: false
 enable_mathjax: false
 extended_fonts: false
 enable_anchorjs: false
@@ -37,7 +37,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username: 
+github_username: darthbhyrava
 bitbucket_username:
 stackoverflow_id:
 twitter_username:
@@ -56,7 +56,7 @@ show_sharing_icons: true
 # Change to 'true' to enable individual icons
 share_facebook: true
 share_twitter: true
-share_googleplus: true
+share_googleplus: false
 share_linkedin: false
 share_digg: false
 share_tumblr: true
