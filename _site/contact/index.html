@@ -12,17 +12,19 @@
     <meta name="robots" content="all">
     <meta name="author" content="darthbhyrava">
     
-    <link rel="canonical" href="http://bhyrava.me/write/write/contact/">
+    <link rel="canonical" href="http://bhyrava.me/write/contact/">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed for A Yellow Envelope" href="/write/feed.xml" />
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/write/css/pixyll.css?201605060723" type="text/css">
+    <link rel="stylesheet" href="/write/css/pixyll.css?201605131159" type="text/css">
 
     <!-- Fonts -->
     
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
     
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     
 
     <!-- MathJax -->
@@ -38,7 +40,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Say Hello">
     <meta property="og:description" content="Letters to myself.">
-    <meta property="og:url" content="http://bhyrava.me/write/contact/">
+    <meta property="og:url" content="http://bhyrava.me/contact/">
     <meta property="og:site_name" content="A Yellow Envelope">
 
     <!-- Twitter Card -->
@@ -46,7 +48,7 @@
     
     <meta name="twitter:title" content="Say Hello" />
     <meta name="twitter:description" content="Letters to myself." />
-    <meta name="twitter:url" content="http://bhyrava.me/write/contact/" />
+    <meta name="twitter:url" content="http://bhyrava.me/contact/" />
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -75,32 +77,15 @@
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="http://bhyrava.me/write" class="site-title">A Yellow Envelope</a>
+      <a href="http://bhyrava.me/write/" class="site-title">A Yellow Envelope</a>
       <nav class="site-nav">
         
     
 
     
-        <a href="/about/">About Pixyll</a>
-    
 
     
-
-    
-
-    
-
-    
-
-    
-
-
-    
-
-    
-
-    
-        <a href="/contact/">Say Hello</a>
+        <a href="http://bhyrava.me">bhyrava</a>
     
 
     
@@ -114,6 +99,32 @@
 
       </nav>
       <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="social-icons-right">
+    
+    
+    
+    <a class="fa fa-rss" href="/write/feed.xml"></a>
+    
+    
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:hbhyrava@gmail.com"></a>
+    
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
       
     </div>
   </div>
@@ -129,16 +140,46 @@
   <article class="post-content">
   <div class="py2">
   
-    <form action="https://formspree.io/hbhyrava@gmail.com" method="POST" class="form-stacked">
-      <input type="text" name="email" class="field-light" placeholder="Email Address">
+    <form class="form-stacked">
+      <input type="text" name="email" class="field-light" placeholder="Your Email Address">
       <textarea type="text" name="content" class="field-light" rows="5" placeholder="What would you like to say?"></textarea>
-      <input type="hidden" name="_next" value="/write/thanks/" />
-      <input type="hidden" name="_subject" value="New submission!" />
       <input type="text" name="_gotcha" style="display:none" />
-      <input type="submit" class="button button-blue button-big mobile-block" value="Say Hello">
+      <button type='submit' class="button button-blue button-big mobile-block">Say Hello</button>
     </form>
   
 </div>
+
+
+  <script>
+    var contactForm = document.querySelector('form'),
+    inputEmail = contactForm.querySelector('[name="email"]'),
+    textAreaMessage = contactForm.querySelector('[name="content"]'),
+    sendButton = contactForm.querySelector('button');
+
+    sendButton.addEventListener('click', function(event){
+      event.preventDefault();
+
+      sendButton.innerHTML = 'sending..';
+
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '//formspree.io/hbhyrava@gmail.com', true);
+      xhr.setRequestHeader("Accept", "application/json")
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
+
+      xhr.send(
+        "email=" + inputEmail.value +
+        "&message=" + textAreaMessage.value);
+
+      xhr.onloadend = function (res) {
+        if (res.target.status === 200){
+          sendButton.innerHTML = 'Message sent!';
+        }
+        else {
+          sendButton.innerHTML = 'Error!';
+        }
+      }
+    });
+</script>
 
 
 
@@ -152,7 +193,7 @@
   <footer class="center">
   <div class="measure">
     <small>
-      Crafted by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+      Crafted by <a href="http://johnotander.com">John Otander</a>.<br>
       &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
     </small>
   </div>
