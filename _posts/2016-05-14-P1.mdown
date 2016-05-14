@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Poem #1 | What would the dead want from us?
+title:      Poem \#1 | What would the dead want from us?
 date:       2016-05-14 06:40:00
 summary:    James Fenton's masterpiece is the first of many such poems which I'll be treasuring on here.
 categories: poetry archive
