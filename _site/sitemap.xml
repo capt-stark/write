@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://bhyrava.me/write/jekyll/pixyll/2016/06/01/fb/</loc>
-<lastmod>2016-06-01T14:10:00+05:30</lastmod>
+<loc>http://bhyrava.me/write/poetry/2016/09/19/deluge/</loc>
+<lastmod>2016-09-19T12:10:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://bhyrava.me/write/books/2016/07/23/b1/</loc>
+<lastmod>2016-07-23T12:10:00+05:30</lastmod>
 </url>
 <url>
 <loc>http://bhyrava.me/write/poetry/archive/2016/05/14/P1/</loc>
@@ -19,6 +23,9 @@
 <url>
 <loc>http://bhyrava.me/write/football/2013/08/23/so1/</loc>
 <lastmod>2013-08-23T14:10:00+05:30</lastmod>
+</url>
+<url>
+<loc>http://bhyrava.me/write/css/2016-5-29-t1/</loc>
 </url>
 <url>
 <loc>http://bhyrava.me/write/404.html</loc>
